@@ -1,0 +1,46 @@
+Class1 notes
+1. Git is a distributed version control model. Which means
+you have local and remote repositories. You always work with your local repo and only push the final changes to remote. so you dont need to be connected to network to work with GIT
+
+2. you always do operations to your local repo and finally when you want to sync with remote you do the command -> git push origin
+
+3. commands of a basic git life cycle you can run in local repo
+
+     git clone <repourl> -> To clone a remote repo into a local workspace
+
+     git branch -a -> List all branches in the remote
+
+     git branch -> tells which branch are you in
+
+     git checkout <branch> -> workspace will switch to the branch you specified
+
+     git add <filename> -> to add files before commit to your local repo
+
+     git status -> gives info about all modified files in your workspace
+
+     git diff -> shows in the output all the lines in the modified files
+
+     git commit -m " bla bla bla" -> command to commit files to local git repo
+
+     git push origin -> command to sync local with remote repo
+
+Class 2 Notes
+     To create a new branch and push this branch to origin
+     	git checkout -b <branchname>  ---> This creates branch in your local
+		git push --set-upstream origin <newbranch>  ---> This will put your branch in remote repo
+     	Do all operations like add files etc ..
+     	finally do git push origin <branchname>
+   
+     To merge first checkout the branch that  you want to merge to
+     and then run below command by specifiying the branch you want to merge from
+         git checkout master
+         git merge Release_oct2017
+         git commit -m "merged branch Release_oct2017 into master"
+         git push origin
+
+     git log -> This command gives you the history of all commits done on a branch
+
+     git blame - To know the changes done by each committer in the group to a file
+
+     Q. What are branching strategies in your project
+     Ans. 
