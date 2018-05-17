@@ -44,3 +44,6 @@ Class 2 Notes
 
      Q. What are branching strategies in your project
      Ans. 
+
+	 git pull --> to get the changes checked in by someone else
+	 If we dont have the latest and if we try to commit our files - it will inform
